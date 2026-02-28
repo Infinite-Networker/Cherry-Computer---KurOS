@@ -10,7 +10,7 @@ setup(
     description="A KurOS-inspired terminal interface",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/cherry-computer-kuros",
+    url="https://github.com/Infinite-Networker/Cherry-Computer---KurOS",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
@@ -27,12 +27,12 @@ setup(
     ],
     python_requires=">=3.7",
     install_requires=[
-        "textual>=0.34.0",
+        "textual>=0.34.0,<9.0.0",
         "rich>=13.0.0",
     ],
     entry_points={
         "console_scripts": [
-            "kuros=main:main",
+            "kuros=kuros.app:main",
         ],
     },
 )

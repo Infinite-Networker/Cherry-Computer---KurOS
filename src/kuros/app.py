@@ -51,10 +51,17 @@ class KurOS(App):
     
     def action_toggle_dark(self) -> None:
         """Toggle between dark and light themes."""
-        self.dark = not self.dark
-        self.notify(f"Switched to {'dark' if self.dark else 'light'} mode")
+        self.theme = (
+            "textual-dark" if self.theme == "textual-light" else "textual-light"
+        )
+        self.notify(f"Switched to {'dark' if self.theme == 'textual-dark' else 'light'} mode")
+
+
+def main() -> None:
+    """Entry point for the kuros console script."""
+    app = KurOS()
+    app.run()
 
 
 if __name__ == "__main__":
-    app = KurOS()
-    app.run()
+    main()
