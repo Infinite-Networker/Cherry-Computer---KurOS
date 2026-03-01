@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cherry-computer-kuros"
+version = "1.0.4"
+description = "A KurOS-inspired retro terminal OS interface for the modern command line"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Cherry Computer" }
+]
+keywords = ["terminal", "tui", "textual", "retro", "os", "cherry", "kuros"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Terminals",
+    "Topic :: System :: Operating System",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "textual>=0.34.0,<9.0.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "flake8",
+    "build",
+    "twine",
+]
+
+[project.urls]
+Homepage = "https://github.com/Infinite-Networker/Cherry-Computer---KurOS"
+Repository = "https://github.com/Infinite-Networker/Cherry-Computer---KurOS"
+"Bug Tracker" = "https://github.com/Infinite-Networker/Cherry-Computer---KurOS/issues"
+Changelog = "https://github.com/Infinite-Networker/Cherry-Computer---KurOS/blob/main/CHANGELOG.md"
+
+[project.scripts]
+kuros = "kuros.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py37", "py38", "py39", "py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
