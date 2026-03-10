@@ -7,7 +7,6 @@
 [![PyPI version](https://img.shields.io/pypi/v/cherry-computer-kuros?color=ff6b6b&logo=pypi&logoColor=white)](https://pypi.org/project/cherry-computer-kuros/)
 [![Python](https://img.shields.io/pypi/pyversions/cherry-computer-kuros?color=ff6b6b&logo=python&logoColor=white)](https://pypi.org/project/cherry-computer-kuros/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-ff6b6b.svg)](LICENSE)
-[![CI](https://your-logo-url-here.png)](https://github.com/Infinite-Networker/Cherry-Computer---KurOS/actions/workflows/ci.yml)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 *Toggle dark mode · Monitor system status · Experience Cherry Computer right in your terminal.*
