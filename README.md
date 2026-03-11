@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/kuros_logo.png" alt="KurOS Logo" width="480"/>
+
 # 🍒 Cherry Computer — KurOS
 
 **A retro terminal OS interface for the modern command line.**
